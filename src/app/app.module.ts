@@ -8,6 +8,7 @@ import { AddempComponent } from './addemp/addemp.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 import { SearchComponent } from './search/search.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchComponent } from './search/search.component';
     AddempComponent,
     EditComponent,
     DeleteComponent,
-    SearchComponent
+    SearchComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
