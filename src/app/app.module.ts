@@ -9,7 +9,36 @@ import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 import { SearchComponent } from './search/search.component';
 import { ViewComponent } from './view/view.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminloginComponent
+
+  },
+  {
+    path:"addemp",
+    component:AddempComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
+  },
+  {
+    path:"delete",
+    component:DeleteComponent
+  },
+  {
+    path:"edit",
+    component:EditComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
+  },
+  
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +51,8 @@ import { ViewComponent } from './view/view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot[myRoute]
   ],
   providers: [],
   bootstrap: [AppComponent]
