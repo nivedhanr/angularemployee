@@ -10,6 +10,7 @@ import { DeleteComponent } from './delete/delete.component';
 import { SearchComponent } from './search/search.component';
 import { ViewComponent } from './view/view.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -47,12 +48,13 @@ const myRoute:Routes=[
     EditComponent,
     DeleteComponent,
     SearchComponent,
-    ViewComponent
+    ViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot[myRoute]
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
